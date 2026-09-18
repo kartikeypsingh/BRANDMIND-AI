@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BrandMind AI</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="eyebrow">ON-DEVICE MARKETING INTELLIGENCE</div>
+      <h1>BrandMind <span>AI</span></h1>
+      <p>Understand your brand. Analyze creatives. Build smarter campaigns.</p>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Brand Profile</h2>
+        <input id="business" placeholder="Business / brand name">
+        <input id="industry" placeholder="Industry">
+        <input id="audience" placeholder="Target audience">
+        <button onclick="analyze()">Analyze Brand</button>
+      </div>
+
+      <div class="card">
+        <h2>Creative Doctor</h2>
+        <p class="muted">Upload an ad or social creative for the planned AI visual-analysis workflow.</p>
+        <input type="file" id="creative" accept="image/*">
+        <div class="placeholder">Vision analysis module</div>
+      </div>
+
+      <div class="card wide">
+        <h2>AI Insights</h2>
+        <div id="results" class="results">Your recommendations will appear here.</div>
+      </div>
+    </section>
+  </main>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
